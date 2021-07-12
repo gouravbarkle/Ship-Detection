@@ -15,6 +15,10 @@ The dataset parsed into the model to train is a JSON formatted text file with th
 • scene id: The unique identifier of the PlanetScope visual scene the image chip was extracted from.
 • longitude_latitude: The longitude and latitude coordinates of the image centre point, with values separated by a single underscore.
 
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/dataset%20sample.png)
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/sample%20image%20channel.png)
+
 # Model Selection
 Since our problem falls under the domain of computer vision, the best choice we could have is to build a model using a Convolution Neural Network.
 The introduction of CNNs marks a pivotal moment in object detection history, as nearly all modern systems use CNNs in some form or other.
@@ -40,4 +44,26 @@ Since the feature selection is done by CNN itself automatically, the time we nee
 
 ![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/CNN%20Model.png)
 
+# Experimental Use Cases
+Changes made in the model architecture:
+• To build deeper model, conv2D layers increased.
+• More numbers of filters used so that more features can be learned from the image.
+• Added Dropout( valued as 0.25) for regularization
+
+# Evaluation and Outcomes 
+Input image sample
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/sample%20input.png)
+
+Output image sample
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/sample%20output.png)
+
+Model training Accuracy graph
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/training%20accracy%20graph.png)
+
+Model training loss graph
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/loss%20graph.png)
 
