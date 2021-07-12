@@ -20,3 +20,7 @@ Since our problem falls under the domain of computer vision, the best choice we 
 The introduction of CNNs marks a pivotal moment in object detection history, as nearly all modern systems use CNNs in some form or other.
 We have chosen to build a ConvNet from scratch instead of picking a pre-trained model so that the learning from the project could be maximized while keeping the model simple to understand.
 
+So why ConvNets but not deep learning model?
+To understand this fact, let's have an example where we need to process an RGB image with the dimension 1000 X 1000.
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/DNN.png)
+
