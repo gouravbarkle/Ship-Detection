@@ -39,3 +39,10 @@ Since the feature selection is done by CNN itself automatically, the time we nee
 # Model Architecture 
 
 ![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/CNN%20Model.png)
+
+# Experimental Use Case
+Changes made in the model architecture:
+• To build deeper model, conv2D layers increased.
+• More numbers of filters used so that more features can be learned from the image.
+• Added Dropout( valued as 0.25) for regularization
+
