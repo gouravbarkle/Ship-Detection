@@ -23,5 +23,19 @@ We have chosen to build a ConvNet from scratch instead of picking a pre-trained 
 So why ConvNets but not deep learning model?
 To understand this fact, let's have an example where we need to process an RGB image with the dimension 1000 X 1000.
 
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/image%20dimesion%20sample.png)
+
+when we tend to create a deep neural network, the input vector to the neural network will have 1000*1000*3 = 3 million inputs values and if we have not more but just 1000 nodes in the first hidden layer, the numbers of parameters to learn in the first transition itself will be around 3 million * 1000 = 3 Billion and optimizing these much numbers of parameters is not feasible at all and this is just for a small image in the only first transition, hence we need to have a practical model to deal with this problem. This is where CNN comes to solve this issue.
+
 ![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/DNN.png)
 
+The above diagram represents a deep neural network with taking input as all 3 million pixels values of the image, which further classifiy it into one of the two predefined output class.
+
+# How CNN can help us to learn these much parameters?
+Neither CNN nor any other model can be feasible to learn these many parameters, hence the basic fundamental structure of the CNN model is not like the deep neural networks but it works in a bit different way. The CNN follows a hierarchical model which works on building a network, like a funnel, and finally gives out a fully-connected layer where all the neurons are connected and the output is processed.
+Every image contains some sort of feature dependencies at the pixel level which plays an important role in processing the image in the desired way and the convolutions operations in the CNN model act as automatic feature extractors from the image. While if we use an algorithm with pixel vector we lose a lot of spatial interaction between pixels, a CNN effectively uses adjacent pixel information to downsample the image first by convolution and then uses a prediction layer at the end.
+Since the feature selection is done by CNN itself automatically, the time we need to spend on the feature engineering before is not required with the CNN.when we compare the features we handcrafted with the detected features by CNN, the performance is much better after. Along with the global and local feature covering, CNN also learns a whole new set of features from the image itself.
+
+# Model Architecture 
+
+![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/CNN%20Model.png)
