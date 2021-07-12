@@ -1,6 +1,3 @@
-# Problem statement
-Convolutional neural network (CNN) approach for ship detection in the ocean using a satellite image.
-
 # Significance of the problem
 The objective includes the detection of the ship in the ocean by using the satellite image includes the domain like marine security as primary other than traffic
 monitoring, illegal cargo movement, oil discharge control and sea pollution monitoring.
@@ -17,4 +14,9 @@ The dataset parsed into the model to train is a JSON formatted text file with th
 • label: Two classes valued as 1 for ‘ship’ and 0 for ‘not ship’.
 • scene id: The unique identifier of the PlanetScope visual scene the image chip was extracted from.
 • longitude_latitude: The longitude and latitude coordinates of the image centre point, with values separated by a single underscore.
+
+# Model Selection
+Since our problem falls under the domain of computer vision, the best choice we could have is to build a model using a Convolution Neural Network.
+The introduction of CNNs marks a pivotal moment in object detection history, as nearly all modern systems use CNNs in some form or other.
+We have chosen to build a ConvNet from scratch instead of picking a pre-trained model so that the learning from the project could be maximized while keeping the model simple to understand.
 
