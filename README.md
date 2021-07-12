@@ -22,5 +22,6 @@ We have chosen to build a ConvNet from scratch instead of picking a pre-trained 
 
 So why ConvNets but not deep learning model?
 To understand this fact, let's have an example where we need to process an RGB image with the dimension 1000 X 1000.
+
 ![alt text](https://github.com/gouravbarkle/Ship-Detection/blob/main/DNN.png)
 
